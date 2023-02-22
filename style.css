@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+.container{
+    width: 336px;
+height: 236px;
+margin: 232px 0 0 408px;
+border: 1px solid #C4C4C4;
+border-radius: 10px;
+}
+
+
+.sari{
+    background: #FFDC40;
+        width: 336px;
+height: 28px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+
+}
+
+h1{
+    padding-left: 69px;
+    width: 198px;
+height: 34px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 30px;
+text-align: center;
+text-transform: capitalize;
+color: #000000;
+
+}
+
+.dobavit{
+    margin-left: 92px;
+    display: flex;
+    width: 150px;
+height: 42px;
+background: #833AE0;
+border-radius: 71px;
+}
+
+.oval{
+    width: 50px;
+    height: 42px;
+    background: #9953F1;
+    border-radius: 80px;
+}
+
+.plus{
+    position: relative;
+top: 12px;
+left: 14px}
+
+.filter{
+    display: block;
+    padding: 10px 0 0 283px;
+}
+
+.add{
+    width: 129px;
+height: 42px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+padding-left: 20px;
+}
+
+.inputStep{
+    display: flex;
+}
+
+input{
+    box-sizing: border-box;
+width: 286px;
+height: 40px;
+border: 1px solid #C4C4C4;
+border-radius: 10px;
+margin: 11px 0 0 28px;
+}
+
+.cancel{
+    margin: 19px 0 0 -51px;
+}
