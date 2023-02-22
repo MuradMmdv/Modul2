@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+*{font-family: 'Roboto';
+}
 
 .container{
     width: 336px;
@@ -89,4 +90,38 @@ margin: 11px 0 0 28px;
 
 .cancel{
     margin: 19px 0 0 -51px;
+    border-radius: 25px;
+    width: 25px;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    position: relative;
+    bottom: 60px;
+    left: 265px;
+}
+
+.cancel:hover{
+    background: #833AE0;
+} 
+  
+
+li{
+    list-style: none;
+    box-sizing: border-box;
+width: 286px;
+height: 40px;
+margin-left: -12px;
+
+
+}
+
+
+ol{
+    border: none;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
 }
