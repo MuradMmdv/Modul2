@@ -11,24 +11,7 @@
     <div class="container">
       <div class="sari"></div>
       <h1>To-do list</h1>
-      <div class="dobavit">
-        <div class="oval">
-          <svg
-            class="plus"
-            width="8"
-            height="9"
-            viewBox="0 0 8 9"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4.6084 3.66113H7.38379V4.85742H4.6084V8.00195H3.33691V4.85742H0.561523V3.66113H3.33691V0.755859H4.6084V3.66113Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-        <div class="add">Add step</div>
-      </div>
+
       <svg
         class="filter"
         width="25"
@@ -70,6 +53,7 @@
       <div class="inputStep">
         <input class="todolist" name="todolist" type="text" />
         <svg
+          onclick="clearInput()"
           class="cancel"
           width="20"
           height="25"
@@ -88,8 +72,45 @@
           <path d="M6 6L14 14" stroke="#C4C4C4" />
           <path d="M6 14L14 6" stroke="#C4C4C4" />
         </svg>
+        <svg
+          onclick="clearInput()"
+          class="secondCancel"
+          width="20"
+          height="25"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            width="19"
+            height="19"
+            rx="9.5"
+            stroke="#C4C4C4"
+          />
+          <path d="M6 6L14 14" stroke="#C4C4C4" />
+          <path d="M6 14L14 6" stroke="#C4C4C4" />
+        </svg>
       </div>
-
+      <div class="dobavit">
+        <div class="oval">
+          <svg
+            class="plus"
+            width="8"
+            height="9"
+            viewBox="0 0 8 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.6084 3.66113H7.38379V4.85742H4.6084V8.00195H3.33691V4.85742H0.561523V3.66113H3.33691V0.755859H4.6084V3.66113Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="add">Add step</div>
+      </div>
       <ol></ol>
     </div>
     <script src="script.js"></script>
