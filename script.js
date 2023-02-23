@@ -18,9 +18,12 @@ clickOval.addEventListener("click", () => {
     list.style.marginTop= '20px';
     deleteIcon.style.display='block'
 
-    if(input.value==''){
+    if(input.value===''){
         alert('Please enter step')
-    } else{
+    } 
+     else if(input.value===' '){
+      alert('Please enter step')
+  }else{
   const listItem = document.createElement("li");
   listItem.className = "list-item";
 
@@ -28,31 +31,38 @@ clickOval.addEventListener("click", () => {
   text.innerText = input.value;
   listItem.appendChild(text);
 
-  deleteIcon.addEventListener("click", () => {
-    remove(input).value;
-  });
 
   const deleteButton = document.createElement("button");
   deleteButton.className = "delete-button";
   deleteButton.appendChild(deleteIcon.cloneNode(true));
   deleteButton.addEventListener("click", () => {
     list.removeChild(listItem);
-    
+    if (list.children.length=== 0) { // son öğe değilse border'ı kalması için koşul
+      list.style.border = "none";
+    }
   });
   listItem.appendChild(deleteButton);
 
   list.appendChild(listItem);
-  listItem.style.transitionDuration='1s'
 
 }
 input.value=''
 
 });
 
+function alphabeticalSort(a, b) {
+  if (a.textContent < b.textContent) {
+    return -1;
+  } else if (a.textContent > b.textContent) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
 filterButton.addEventListener("click", () => {
   const listItems = document.querySelectorAll(".list-item");
-  const sortedListItems = Array.from(listItems).sort((a, b) => a.textContent.localeCompare(b.textContent));
+  const sortedListItems = Array.from(listItems).sort(alphabeticalSort);
   list.innerHTML = "";
   sortedListItems.forEach((item) => list.appendChild(item));
 });
-
