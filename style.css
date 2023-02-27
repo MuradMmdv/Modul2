@@ -95,7 +95,10 @@ height: 40px;
 border: 1px solid #C4C4C4;
 border-radius: 10px;
 margin: 11px 0 0 28px;
+outline-color: #C4C4C4;
 }
+
+
 .cancel{
     margin: 19px 0 0 -51px;
     border-radius: 25px;
