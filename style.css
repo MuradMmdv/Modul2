@@ -5,9 +5,10 @@
 .container{
     width: 336px;
 height: 236px;
-margin: 232px 0 0 408px;
+margin: 232px 0 0 600px;
 border: 1px solid #C4C4C4;
 border-radius: 10px;
+align-items: center;
 }
 
 
