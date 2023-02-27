@@ -18,12 +18,12 @@ clickOval.addEventListener("click", () => {
     list.style.marginTop= '20px';
     deleteIcon.style.display='block'
 
-    if(input.value===''){
+    if(input.value.split('').filter((item) => item != ' ').length === 0)
+    {
         alert('Please enter step')
+        list.style.border='none'
     } 
-     else if(input.value===' '){
-      alert('Please enter step')
-  }else{
+  else{
   const listItem = document.createElement("li");
   listItem.className = "list-item";
 
@@ -37,7 +37,7 @@ clickOval.addEventListener("click", () => {
   deleteButton.appendChild(deleteIcon.cloneNode(true));
   deleteButton.addEventListener("click", () => {
     list.removeChild(listItem);
-    if (list.children.length=== 0) { // son öğe değilse border'ı kalması için koşul
+    if (list.children.length=== 0) { 
       list.style.border = "none";
     }
   });
